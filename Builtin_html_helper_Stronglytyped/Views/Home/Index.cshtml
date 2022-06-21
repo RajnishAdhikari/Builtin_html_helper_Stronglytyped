@@ -1,0 +1,23 @@
+﻿@model Builtin_html_helper_Stronglytyped.Models.Student
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Index", "Home"))
+        {
+            @Html.DisplayTextFor(m => m.Id)<br />
+            @Html.DisplayTextFor(m => m.Name)
+            @Html.DisplayTextFor(m => m.Age)
+            @Html.DisplayTextFor(m => m.Address)
+            @Html.DisplayTextFor(m => m.IsPass)
+
+            
+        }
+    </div>
+</body>
+</html>
